@@ -8,6 +8,7 @@ class StoreControllerTest < ActionController::TestCase
 	assert_select '#main .entry', 4
 	assert_select 'h3', 'MyString1'
 	assert_select '.price', /\€[,\d]+\.\d\d/
+	assert_select '#year', '2016'
   end
 
 end
